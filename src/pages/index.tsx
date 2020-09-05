@@ -4,7 +4,10 @@ import { Field, Form, Formik, FormikConfig, FormikValues } from 'formik'
 import Head from 'next/head'
 import { useForm, useStep } from 'react-hooks-helper'
 
-const Home = () => {
+
+
+const Home = ({form}) => {
+
   return (
     <>
       <Head>
@@ -17,5 +20,7 @@ const Home = () => {
     </>
   )
 }
+
+
 
 export default Home

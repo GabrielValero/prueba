@@ -5,7 +5,7 @@ import EmailInput from '../../molecules/inputs/input-email'
 import LastnameInput from '../../molecules/inputs/input-lastname'
 import NameInput from '../../molecules/inputs/input-name'
 
-function PageFormOne() {
+function PageFormOne({setIndex}) {
   return (
     <>
       <NameInput />

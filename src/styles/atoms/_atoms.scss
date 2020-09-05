@@ -1,0 +1,90 @@
+//------------------EXTENDS------------------//
+
+////////////////////////EXTEND BUTTON BLUE////////////////////////
+
+%titleEighteen {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: $colorTitleWhite;
+  line-height: 0;
+}
+
+////////////////////////EXTEND BUTTON BLUE////////////////////////
+%btnMblue {
+  text-align: center;
+  vertical-align: middle;
+  padding: 16px 16px;
+  border-radius: 5px;
+  background: $accentInfo;
+  font-weight: bold;
+  font-size: $fontEighteen;
+  font-family: $fontButton;
+  font-style: normal;
+  color: $whiteColor;
+  text-decoration: none;
+  box-shadow: 0px 4px 8px $shadownBtnBlue;
+}
+
+.btn-medium-blue,
+.btn-medium-return,
+.btn-medium-next {
+  @extend %btnMblue;
+  &:hover,
+  &:focus {
+    background: $hooverBlue;
+  }
+}
+
+//------------------------------------------------------------------//
+
+//////////////////////ATOM BUTTON MEDIUM BLUE REGISTER//////////////////////
+
+.container-btns-register {
+  margin-top: 130px;
+  margin-left: 140px;
+  display: flex;
+  flex-direction: row;
+  z-index: 2;
+}
+
+.btn-medium-return {
+  margin-right: 20px;
+}
+
+////////////////////////////////////////
+.container-btn-next {
+  z-index: 2;
+  margin-top: 56px;
+  margin-left: 180px;
+}
+
+//////////////////////ATOM TITLE REGISTER//////////////////////
+.text-registerpass,
+.title-basic-dates {
+  font-family: $fontTitle;
+  font-style: normal;
+  font-weight: bold;
+  font-size: $fontTwentyFour;
+  z-index: 2;
+  margin-top: 40px;
+  margin-bottom: 0;
+  color: $colorTitleWhite;
+}
+
+////////////////DESCRIPTION LOG IN ////////////////
+.have-account {
+  @extend %titleEighteen;
+
+  .log-in {
+    color: $accentInfo;
+    text-decoration: none;
+  }
+}
+
+.content-description {
+  margin-top: 24px;
+  margin-bottom: 0;
+  z-index: 2;
+}
